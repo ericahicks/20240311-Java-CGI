@@ -38,3 +38,6 @@ buildNumber.properties
 
 # Mac generated files
 .DS_Store
+
+# other folders to ignore
+.metadata
