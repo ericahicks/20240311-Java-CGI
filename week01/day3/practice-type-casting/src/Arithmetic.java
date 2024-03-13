@@ -23,5 +23,13 @@ public class Arithmetic {
         int side = 10;
         double area = Math.pow(side, 2);
         System.out.println("\nArea of a square with side length 10 is " + area);
+        System.out.println();
+        int a = 1;
+        int b = a++; // b becomes 1 and a = a + 1 = 2
+        System.out.println(a + ", " + b); // 2, 1
+
+        a = 1;
+        b = ++a; // b becomes 2 and a = a + 1 = 2
+        System.out.println(a + ", " + b); // 2, 2
     }
 }
