@@ -54,7 +54,7 @@ public class StringExamples {
                                         "Homework", 1.0/3.0,
                                         "Project", 2.0/3.0);
         System.out.println(table);
-
+        System.out.println();
         // System.out.format() and system.out.printf are synonymx
         System.out.printf("%-10s| Weight%n-------------------%n%-10s|%8.2f%n%-10s|%8.2f%n%-10s|%8.2f", 
                                         "Category",
