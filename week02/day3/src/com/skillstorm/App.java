@@ -11,6 +11,7 @@ public class App {
         evens[0] = 2;
         evens[1] = 4;
         evens[2] = 6;
+
         // 2. array literals
         String[] bestFriends = {"Brian", "Carey", "Natalie", "Anderson"};
         //                         0       1        2           3
@@ -23,6 +24,7 @@ public class App {
         System.out.println(bestFriends); // prints reference info not contents
         System.out.println(Arrays.toString(bestFriends)); // prints contents
 
+        //////////////////////////////////
         // Accessing elements
         // Reasign values
         System.out.println("> Updating spelling of Carey in original");
@@ -30,6 +32,7 @@ public class App {
         System.out.println(Arrays.toString(bestFriends));
         
 
+        ///////////////////////////////////
         // Resize array
         // bestFriends[4] = "Kristen"; // ArrayIndexOutOfBoundsException: 4
         System.out.println("> Creating copyOf original");
@@ -45,6 +48,7 @@ public class App {
         System.out.println(Arrays.toString(bestFriends2));
 
 
+        /////////////////////////////////////
         // Compare arrays
         System.out.println("Array comparison");
         System.out.println("== is " + (evens == evens2)); // compares memory addresses
@@ -57,11 +61,13 @@ public class App {
         System.out.println("== is " + (str == str2));
         System.out.println(".equals is " + str.equals(str2));
 
+        /////////////////////////////
         // copyRange - indexing is start-inclusive and end-exclusive
         int[] copyEvens = Arrays.copyOfRange(evens, 0, 2); // evens holds {2, 4, 6}
                                                            // indexes      0  1  2 
         System.out.println("\ncopyEvens is " + Arrays.toString(copyEvens)); // [2, 4]
 
+        ////////////////////////////////
         // Cannot access element at invalid index
         int[] nums = {1, 2, 3};
         System.out.println(getFirstElement(nums)); // 1
@@ -88,7 +94,7 @@ public class App {
     public static char getFirstCharacter(String str) {
         // guard claue
         if (str == null || str.length() == 0) {
-            return '\u0000'; // note '' empty character is not valid
+            return '\u0000'; // note '' empty character is not valid so use unicode notation
         } 
         return str.charAt(0);
     }
