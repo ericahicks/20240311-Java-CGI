@@ -19,6 +19,12 @@ public class App {
         // 3. new operator with array literal
         int[] evens2 = new int[]{2, 4, 6};
 
+        // bad examples
+        // int[3] odds = {1, 2, 3};
+        // int[] odds = new int[1, 2, 3];
+        // int[] odds = new int[3]{1, 2, 3};
+        int[] odds = new int[]{1, 2, 3};
+
         ///////////////////////////////////
         // Printing Arrays
         System.out.println(bestFriends); // prints reference info not contents
