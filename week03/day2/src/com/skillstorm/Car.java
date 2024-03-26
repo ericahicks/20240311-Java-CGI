@@ -9,9 +9,9 @@ public class Car {
     int gasInTank = 0;
 
     public Car() {
-        this.make = "Range Rover";
-        this.model = "Evoke";
-        this.year = 2020;
+        // this.make = "Range Rover";
+        // this.model = "Evoke";
+        // this.year = 2020;
     }
 
     public Car(String make, String model, int year) {
@@ -34,6 +34,9 @@ public class Car {
 
     public static void main(String[] args) {
         Car car1 = new Car();
+        car1.make = "Toyota";
+        car1.model = "Prius";
+        car1.model = "2016";
         Car car2 = new Car("Jeep", "Rangler", 2024);
         System.out.println(car1.toString());
         System.out.println(car2);
