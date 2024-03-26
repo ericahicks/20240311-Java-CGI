@@ -1,7 +1,7 @@
 package com.skillstorm;
 
 public class Person {
-    public static int population = 0; // belongs to the class
+    public static long population = 70_000_000_000L; // belongs to the class
     
     public String name = "unknown"; // instance property belongs to object
 
@@ -17,6 +17,9 @@ public class Person {
     }
 
     // static methods
+    public static void viewPopulation() {
+        System.out.printf("%,d people", Person.population);
+    }
 
     // instance methods
     public String getName() {

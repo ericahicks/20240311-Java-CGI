@@ -43,10 +43,12 @@ public class App {
 
         
         ////////////////////////////
-        // Example 3: Static vs instance methods
+        // Example 4: Static vs instance methods
         Person bob = new Person("bob");
         System.out.println(bob); // Person: bob
         System.out.println(bob.getName()); // Bob
+
+        Person.viewPopulation();
     }
 
 
