@@ -18,6 +18,8 @@ public class Review {
         bookstore = new Bookstore();
 
         // Benefits of objects 
+
+        // version 1: messy non-OOP code
         String student1Name = "Same";
         char student1Grade = 'A';
         String student2Name = "Suzy";
@@ -26,6 +28,7 @@ public class Review {
         String[] students = {student1Name, student2Name};
         char[] grades = {student1Grade, student2Grade};
 
+        // version 2: organized OOP code
         Student student1 = new Student("Sam", 'A');
         Student student2 = new Student("Suzy", 'B');
 
